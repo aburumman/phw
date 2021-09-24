@@ -30,7 +30,7 @@ jobs:
         uses: docker/login-action@v1 
         with:
           username: ${{ secrets.DOCKER_ID }}
-          password: ${{ secrets.DOCKER_PW }}
+          password: ${{ secrets.DOCKER_TOKEN }}
       -
         name: Build and push
         uses: docker/build-push-action@v2
